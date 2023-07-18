@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ca pop mon sauce?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="pageAccueil">
+        <img id="imageAccueil" src="images/popsauce.jpg">
+        <div id="texteAccueil">
+            Bienvenue sur Pop Sauce!<br/>
+            Choisissez le niveau de difficulté<br/>
+        </div>
+        <button id="antoine">Antoine</button>
+        <button id="normal">Normalement constitué</button>
+        <button id="robin">Robin</button>
+        <div id="zoneBoutonLancer">
+            <button id="boutonLancer">Lancer</button>
+        </div>
+    </section>
+    <section id="pageJeu" hidden>
+        <img id="imageFilm">
+        <div id="bouttonsChoixAffichage">
+            <input type="radio" name="choixImage" >
+            <input type="radio" name="choixImage" hidden>
+            <input type="radio" name="choixImage" hidden>
+            <input type="radio" name="choixImage" hidden>
+        </div>
+        <input id="reponse"><br/>
+        <div id="zoneSkip">
+            <button id="skip">skip</button>
+        </div>
+    </section>
+    <section id="pageResultats" hidden>
+        <div id="arriveeResultats">
+            <span id="zoneResultat"></span> Points!<br/>
+            <label for="champion">Champion :</label>
+            <input type="text" id="champsScore" name="champion"><br/>
+        </div>
+        <button id="bouttonRelancer" hidden>Relancer</button>
+        <button id="bouttonAfficherScores" hidden>Afficher scores</button>
+        <table width="50%">
+            <tbody id="tableauScores" hidden>
+                <tr>
+                    <th>Nom</th>
+                    <th>Difficulté</th>
+                    <th>Score</th>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
